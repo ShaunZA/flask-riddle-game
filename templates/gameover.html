@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container base-content">
+    <div class="row justify-content-center">
+        <div class="col text-center">
+            <h1>Game Over!</h1>
+            <p>Sorry, you got the answer wrong too many times.</p>
+            <form method="POST">
+                <button class="btn btn-dark">Start Again</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

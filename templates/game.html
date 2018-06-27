@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container base-content">
+    <div class="row justify-content-center">
+        <div class="col text-center">
+            <h1>Question {{ riddles[0].id }}</h1>
+            <p>{{ riddles[0].riddle }}</p>
+            <form method="POST">
+                <input type="text" id="riddle_answer" name="riddle_answer"/>
+                <button class="btn btn-dark">Answer</button>
+            </form>
+            <p>{{ riddles[0].answer }}</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
