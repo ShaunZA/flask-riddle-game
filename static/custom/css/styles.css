@@ -2,20 +2,26 @@
 body {
   padding-top: 54px;
   min-height: 100%;
-  display: grid;
 }
 
 html {
   height: 100%;
 }
 
-.base-content {
+.form-content {
   max-width: 1024px;
 }
 
-.about-block,
-.main-page,
-.welcome-page {
+h4 {
+  margin-bottom: 0;
+}
+
+.game-padding {
+  padding-top: 64px !important;
+}
+
+.form-actual {
+  max-width: 1024px;
   margin: auto;
 }
 
@@ -24,7 +30,6 @@ ul {
     padding: 0;
     margin: 0;
 }
-
 
 @media (min-width: 992px) {
   body {
