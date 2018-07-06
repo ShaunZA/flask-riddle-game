@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Josefin+Sans|Oswald|Roboto');
 
 body {
-  padding-top: 54px;
+  font-family: 'Roboto', serif;
+  padding-top: 64px;
   min-height: 100%;
 }
 
@@ -8,21 +10,12 @@ html {
   height: 100%;
 }
 
-.form-content {
-  max-width: 1024px;
-}
-
-h4 {
-  margin-bottom: 0;
+.base-content {
+  max-width: 1024;
 }
 
 .game-padding {
-  padding-top: 64px !important;
-}
-
-.form-actual {
-  max-width: 1024px;
-  margin: auto;
+  padding-top: 0px;
 }
 
 ul {
@@ -31,8 +24,27 @@ ul {
     margin: 0;
 }
 
+p, label {
+  font-family: 'Roboto', serif;
+}
+
+.question-number {
+  font-family: 'Cinzel', serif;
+}
+
+.riddle, h3, h4 {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.nav-item {
+  font-family: 'Oswald', sans-serif;
+}
+
 @media (min-width: 992px) {
   body {
-    padding-top: 56px;
+    padding-top: 66px;
+  }
+  .game-padding {
+  padding-top: 64px;
   }
 }

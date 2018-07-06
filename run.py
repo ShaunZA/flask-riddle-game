@@ -156,7 +156,7 @@ def game(username):
         user_response = request.form["answer"].title()
         
         write_to_file("data/user-" + username + "-guesses.txt", user_response + "\n")
-        
+
         # Compare the user's answer to the correct answer of the riddle
         if answers[riddle_index] == user_response:
             # Correct answer
@@ -197,11 +197,10 @@ def gameover(username):
     riddle_index = 0
     answers = riddle_answers()
     score = 0
-    
+        
     if request.method =="POST":
         
-        return redirect(url_for('game', username=username, riddle_index=riddle_index, riddles=riddles, 
-                            answers=answers, attempts=store_all_attempts(username), remaining_attempts=attempts_remainder(), score=end_score(username)))
+        return redirect(url_for('game', username=username))
 
     return render_template("gameover.html",
                             username=username)
