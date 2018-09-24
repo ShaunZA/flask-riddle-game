@@ -1,11 +1,7 @@
 import os
 import sys
-from importlib import reload
 from flask import Flask, render_template, redirect, request, url_for
 
-# Needed for encoding to utf8
-reload(sys)  
-sys.setdefaultencoding('utf8')
 
 app = Flask(__name__)
 app.secret_key = 'some_secret'
