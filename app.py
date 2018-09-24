@@ -3,6 +3,7 @@ import sys
 from importlib import reload
 from flask import Flask, render_template, redirect, request, url_for
 
+# Needed for encoding to utf8
 reload(sys)
 
 app = Flask(__name__)
@@ -113,7 +114,8 @@ def get_scores():
 @app.route('/', methods=["GET", "POST"])
 def index():
     if request.method == "POST":
-        global username = request.form['username'].lower()
+        global username
+        username = request.form['username'].lower()
         if username == "":
             return render_template("index.html", page_title="Home", username=username)
         else:
