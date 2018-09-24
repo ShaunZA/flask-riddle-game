@@ -1,1 +1,1 @@
-web: gunicorn riddle-app:application
+web: gunicorn run:application
