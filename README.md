@@ -11,6 +11,8 @@ Once the user makes it to the end of the 10th riddle, their score will be added 
 
 The site was made using VS Code and Cloud 9 IDE and tested using Google Chrome, Mozilla Firefox and Internet Explorer. Several Android devices as well as an iPhone 6s were also used in the testing process. Google Chrome inspector was used to simulate several device screen sizes I could not personally get my hands on.
 
+Mockups can be found in the /mockup/ folder in this Git repo.
+
 
 ### The following is a table on the functionality of the site.
 
@@ -27,6 +29,8 @@ The site was made using VS Code and Cloud 9 IDE and tested using Google Chrome, 
 
 ### Below is a list of Libraries/Technologies that were used in the creation of this website:
 
+* [Flask Micro Framework](http://flask.pocoo.org/)
+Flask provides an interface between Python and the web. It is used for all the logic on the site.
 * [Bootstrap CSS Framework](https://getbootstrap.com/)
 This framework was used throughout the website on all pages to facilitate a responsive design.
 * [FontAwesome Icons](https://fontawesome.com/)
