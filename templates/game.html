@@ -1,48 +1,48 @@
 {% extends 'base.html' %} {% block content %}
 <div class="container base-content game-page">
 
-    <div class="row text-center game-padding">
+  <div class="row text-center game-padding">
 
-        <div class="col-md-12">
-            <h2 class="question-number">Question {{riddle_index + 1}}:</h2>
-        </div>
-
-        <div class="col-md-12">
-            <h3 class="riddle"> {{ riddles[riddle_index] }} </h3>
-        </div>
-
-        <div class="col-md-12 form-content text-center">
-            <form method="POST" class="form-actual">
-                <input type="text" class="form-control" name="answer" id="answer" autofocus>
-                <input type="hidden" name="riddle_index" id="riddle_index" value={{riddle_index}}>
-                <br>
-                <button class="btn btn-dark hvr-round-corners">send</button>
-            </form>
-        </div>
-
-        <div class="col-md-12">
-            <h4>Attempts remaining: {{remaining_attempts}}</h4>
-        </div>
-
+    <div class="col-md-12">
+      <h2 class="question-number">Question {{riddle_index + 1}}:</h2>
     </div>
-    
+
+    <div class="col-md-12">
+      <h3 class="riddle"> {{ riddles[riddle_index] }} </h3>
+    </div>
+
+    <div class="col-md-12 form-content text-center">
+      <form method="POST" class="form-actual">
+        <input type="text" class="form-control" name="answer" id="answer" autofocus>
+        <input type="hidden" name="riddle_index" id="riddle_index" value={{riddle_index}}>
+        <br>
+        <button class="btn btn-dark hvr-round-corners">send</button>
+      </form>
+    </div>
+
+    <div class="col-md-12">
+      <h4>Attempts remaining: {{remaining_attempts}}</h4>
+    </div>
+
+  </div>
+
 </div>
 <div class="container game-extras">
-    <div class="row fixed-bottom text-center">
+  <div class="row fixed-bottom text-center">
 
-        <div class="col-md-6 col-xs-12">
-            <h4>Incorrect Answers:</h4>
-            {% for attempt in attempts %}
-            </p> {{ attempt }} </p>
-            {% endfor %}
-        </div>
-        
-        <div class="col-md-6 col-xs-12">
-            <h4>Current Score:</h4>
-            </p> {{ score }} </p>
-        </div>
-
+    <div class="col-md-6 col-xs-12">
+      <h4>Incorrect Answers:</h4>
+      {% for attempt in attempts %}
+      <p> {{ attempt }} </p>
+      {% endfor %}
     </div>
+
+    <div class="col-md-6 col-xs-12">
+      <h4>Current Score:</h4>
+      <p> {{ score }} </p>
+    </div>
+
+  </div>
 
 </div>
 {% endblock %}
