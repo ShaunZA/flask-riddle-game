@@ -51,7 +51,7 @@ def store_all_attempts(username):
         attempts = incorrect_attempts.readlines()
     return attempts
 
-def num_of_attempts():
+def num_of_attempts(username):
     attempts = store_all_attempts(username)
     return len(attempts)
 
