@@ -1,7 +1,9 @@
 import os
 import sys
+from importlib import reload
 from flask import Flask, render_template, redirect, request, url_for
 
+reload(sys)
 
 app = Flask(__name__)
 app.secret_key = 'some_secret'
@@ -51,7 +53,7 @@ def store_all_attempts(username):
         attempts = incorrect_attempts.readlines()
     return attempts
 
-def num_of_attempts(username):
+def num_of_attempts():
     attempts = store_all_attempts(username)
     return len(attempts)
 
