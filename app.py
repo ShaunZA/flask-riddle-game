@@ -113,8 +113,7 @@ def get_scores():
 @app.route('/', methods=["GET", "POST"])
 def index():
     if request.method == "POST":
-        global username
-        username = request.form['username'].lower()
+        global username = request.form['username'].lower()
         if username == "":
             return render_template("index.html", page_title="Home", username=username)
         else:
