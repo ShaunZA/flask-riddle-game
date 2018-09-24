@@ -35,3 +35,7 @@ Flask provides an interface between Python and the web. It is used for all the l
 This framework was used throughout the website on all pages to facilitate a responsive design.
 * [FontAwesome Icons](https://fontawesome.com/)
 Used for the Social Media icons and the Media button.
+
+### Deployment
+
+The project is deployed on Heroku, you can reach it by going to this [link](https://shaun-riddle-game.herokuapp.com/)
