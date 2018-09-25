@@ -39,3 +39,5 @@ Used for the Social Media icons and the Media button.
 ### Deployment
 
 The project is deployed on Heroku, you can reach it by going to this [link](https://shaun-riddle-game.herokuapp.com/)
+
+There is a slight problem with beginning a game that doesnt always happen. Once the user inputs a Username to play the game then clicks on the 'Play' button, there is a possibility of getting a server error. To get past this, press the back button on the browser and then click 'Play' again. Keep trying that until it works.
